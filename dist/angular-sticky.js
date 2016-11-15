@@ -378,7 +378,7 @@ angular.module('hl.sticky', [])
 			// @todo dffgdg
 			function containerBoundsTop(scrolledDistance) {
 				if (container === null) {
-					container = options.container !== undefined ? angular.isString(options.container) ? document.queryElementById(options.container) : options.container : false;
+					container = options.container !== undefined ? angular.isString(options.container) ? document.getElementById(options.container) : options.container : false;
 				}
 				if (container) {
 					var hasScrollDistance = !(scrolledDistance === null || scrolledDistance === undefined);
@@ -390,7 +390,7 @@ angular.module('hl.sticky', [])
 			}
 			function containerBoundsBottom(scrolledDistance) {
 				if (container === null) {
-					container = options.container !== undefined ? angular.isString(options.container) ? document.queryElementById(options.container) : options.container : false;
+					container = options.container !== undefined ? angular.isString(options.container) ? document.getElementById(options.container) : options.container : false;
 				}
 				if (container) {
 					var hasScrollDistance = !(scrolledDistance === null || scrolledDistance === undefined);
